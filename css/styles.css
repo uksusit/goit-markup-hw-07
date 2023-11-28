@@ -41,7 +41,7 @@ h1, h2, h3, p {margin: 0;}
     /* outline: 1px solid red;  */
 }
 
-/* header */
+/* ---------------- header --------------------- */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -71,14 +71,14 @@ header li {
     /* outline: 1px solid red; */
     position: relative;
 }
-.site-nav a {
+.site-nav__link {
     display: block;
     padding: 32px 0;
     transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav a::after {
+.site-nav__link::after {
         content: '';
         opacity: 0;
             position: absolute;
