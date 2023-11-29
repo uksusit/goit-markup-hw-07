@@ -47,7 +47,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
-header {    
+.header {    
     border-bottom: 1px solid #ECECEC;
 }
 header li+li {
