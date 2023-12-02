@@ -617,7 +617,7 @@ position: relative;
     justify-content: space-between;
     align-items: center;
 }
-.social-btn {
+.social__btn {
     display: flex;
     width: 44px;
     height: 44px;
@@ -633,12 +633,12 @@ position: relative;
     border-color: var(--white-color); */
 }
 
-.social-icon {
+.social__icon {
     width: 20px;
     height: 20px;
 }
-.social .social-btn:hover ,
-.social .social-btn:focus {
+.social .social__btn:hover ,
+.social .social__btn:focus {
     fill: var(--white-color);
     background-color: var(--blue-color);
     cursor: pointer;
