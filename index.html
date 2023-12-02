@@ -327,62 +327,62 @@
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="close" data-modal-close>
-                    <svg class="close-icon">
+                <button class="modal__close" data-modal-close>
+                    <svg class="modal__close-icon">
                         <use href="./images/icons.svg#close-icon"></use>
                     </svg> 
                 </button>
-                <form  class="js-speaker-form" name="sighn-up" autocomplete="on" >
-                    <p>Залиште свої дані, ми вам передзвонимо</p>
+                <form  class="form js-speaker-form" name="sighn-up" autocomplete="on" >
+                    <p class="form__text" >Залиште свої дані, ми вам передзвонимо</p>
  
-                    <div class="modal-input">
-                    <label class="form-label">Ім'я
-                        <input type="text" name="name" placeholder=" " required autofocus >
-                        <svg class="input-icon"> 
+                    <div class="form__input-area">
+                    <label class="form__label">Ім'я
+                        <input class="form__input" type="text" name="name" placeholder=" " required autofocus >
+                        <svg class="form__input-icon"> 
                             <use href="./images/icons.svg#person-input-icon"></use> 
                         </svg>
                     </label>   
                     </div>  
 
-                    <div class="modal-input">
-                    <label >Телефон
-                        <input type="tel" name="phone"  placeholder=" " required>
-                        <svg class="input-icon">
+                    <div class="form__input-area">
+                    <label class="form__label" >Телефон
+                        <input class="form__input" type="tel" name="phone"  placeholder=" " required>
+                        <svg class="form__input-icon">
                             <use href="./images/icons.svg#phone-input-icon"></use>
                         </svg>
                     </label>
                     </div>                               
 
-                    <div class="modal-input">
-                        <label >Пошта
-                        <input type="email" name="mail" placeholder=" " required>
-                        <svg class="input-icon">
+                    <div class="form__input-area">
+                        <label class="form__label" >Пошта
+                        <input class="form__input" type="email" name="mail" placeholder=" " required>
+                        <svg class="form__input-icon">
                             <use href="./images/icons.svg#email-input-icon"></use>
                         </svg>
                         </label>
                     </div>
                     
                     <div >
-                        <label class="modal-input" >Коментар
-                            <textarea class="comment" name="comment" rows="5" placeholder="Введіть текст"></textarea>  
+                        <label class="form__input-area" >Коментар
+                            <textarea class="form__comment" name="comment" rows="5" placeholder="Введіть текст"></textarea>  
                         </label>      
                     </div> 
 
                     <div  class="checkbox">                  
-                        <label class="label-checkbox">
-                            <input class="accept" name="accept" type="checkbox"  required>
-                            <span class="cust-chbox">
-                                <svg class="check-icon">
+                        <label class="checkbox__label">
+                            <input class="checkbox__accept" name="accept" type="checkbox"  required>
+                            <span class="checkbox__custom">
+                                <svg class="checkbox__icon">
                                     <use href="./images/icons.svg#check-input-icon"></use>
                                 </svg>
                             </span>
-                            <span class="text-policy">Погоджуюся з розсилкою та приймаю  </span>
-                            <a href="">Умови договору</a>
+                            <span class="form__text-policy">Погоджуюся з розсилкою та приймаю  </span>
+                            <a class="form__policy" href="">Умови договору</a>
                         </label>
                     </div>
 
-                    <div class="submit-thumb">
-                        <button class="submit" type="submit">Відправити</button>
+                    <div class="form__submit-thumb">
+                        <button class="form__submit" type="submit">Відправити</button>
                     </div>
                 </form>
             </div>
