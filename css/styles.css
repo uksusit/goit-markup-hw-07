@@ -244,9 +244,9 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
     width: 528px;
     height: 581px;
     border-radius: 4px;
-        background:var(--white-color);
+    background:var(--white-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-        padding: 40px;
+    padding: 40px;
 }
 .modal__close {
     position: absolute;
@@ -274,9 +274,9 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
 /* flex-shrink: 0; */
 }
 .modal__close:hover, .modal__close:focus {
-    /* border-color: var(--blue-color) ; */
     fill: var(--blue-color);
     cursor: pointer;
+    /* border-color: var(--blue-color) ; */
 }
 .form__text {
     color: #212121;
@@ -302,19 +302,19 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
         font-weight: 400;
         line-height: normal;
         letter-spacing: 0.12px;
-        /* position: relative; */
         transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+        /* position: relative; */
 }
 .form__input {
     width: 100%;
     height: 40px;
     margin-top: 4px;
     padding: 12px 42px;
-        /* flex-shrink: 0; */
         border-radius: 4px;
         border: 1px solid rgba(33, 33, 33, 0.20);
         transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
         outline: none;
+        /* flex-shrink: 0; */
 }
 .form__input-area {
     position: relative;
@@ -328,7 +328,7 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
     height: 18px;
     pointer-events: none;
 }
-/* ------------------ comment  --------------------- */
+/* ----------------- comment  --------------------- */
 .form__comment::placeholder {
     color: rgba(117, 117, 117, 0.50);
 }
@@ -338,14 +338,14 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
     resize: none;
     margin-top: 4px;
     padding: 12px 16px;
-        /* flex-shrink: 0; */
-        border-radius: 4px;
+    border-radius: 4px;
         border: 1px solid;
         border-color:  rgba(33, 33, 33, 0.20);
         transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-letter-spacing: 0.12px;
-outline: none;
+    letter-spacing: 0.12px;
+    outline: none;
 }
+
 /* .comment:hover, */
 .form__comment:focus {
 border-color: #188CE8;
@@ -368,16 +368,16 @@ cursor: pointer;
     justify-content: baseline;
     align-items: center;
 }
-/* .checkbox  */
+
+/* ------------checkbox ---------- */
 .checkbox__label {
     margin-top: 17px;
     display: flex;
     align-items: center;
         font-size: 14px;
         line-height: 24px;
-        /* line-height: 1.71429; */
-        /* 171.429% */
         letter-spacing: 0.42px;
+        /* line-height: 1.71429; */
 }
 .checkbox__accept {
     /* appearance: none; */
@@ -388,29 +388,19 @@ cursor: pointer;
     clip: rect(0 0 0 0);
 }
 .form__text-policy {
-    /* outline: auto; */
     margin-left: 8px;
 font-size: 14px;
 letter-spacing: 0.42px;
-    /* color: #757575; */
-/* font-family: Roboto; */
-/* font-style: normal; */
-/* font-weight: 400; */
-/* line-height: 24px; 171.429% */
+    /* outline: auto; */
 }
 .form__policy {
     margin-left: 5px;
     color: var(--blue-color);
         letter-spacing: 0.42px;
         text-decoration-line: underline;
-font-size: 14px;
-line-height: 24px; /* 171.429% */
+    font-size: 14px;
+    line-height: 24px; /* 171.429% */
 /* outline: none; */
-        /* color: #757575; */
-/* font-family: Roboto; */
-/* font-style: normal; */
-/* font-weight: 400; */
-/* letter-spacing: 0.42px; */
 }
 .checkbox__custom {
     display: inline-flex;
@@ -422,14 +412,13 @@ line-height: 24px; /* 171.429% */
     outline-width: 1.5pt;
     outline-offset: -1.5pt;
     outline-color: var(--main-text-color);
+    border-radius: 10%;
+    transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
     /* border-style: solid;
     border-color: var(--main-text-color);
     border: 1px; */
-        border-radius: 10%;
         /* border-color: #212121; */
-        transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-        transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .checkbox__icon {
     opacity: 0;
@@ -444,18 +433,20 @@ line-height: 24px; /* 171.429% */
 
 /* .accept:hover + .cust-chbox, */
  .checkbox__accept:focus + .checkbox__custom {
-outline-color: var(--blue-color);
-border-color: #188CE8;
+    outline-color: var(--blue-color);
+    border-color: #188CE8;
 }
 
 
-.checkbox__accept:checked + .checkbox__custom ,
+.checkbox__accept:checked + .checkbox__custom 
+{
+    opacity: 1;
+    outline-color: var(--blue-color);
+}
 .checkbox__accept:checked + .checkbox__custom .checkbox__icon
  {
     opacity: 1;
     outline-color: var(--blue-color);
-    /* background-color: var(--blue-color); */
-    /* fill: yellow; */
 }
 
 
@@ -466,31 +457,28 @@ border-color: #188CE8;
 .form__submit {
     width: 200px;
     height: 50px;
-        color: #FFF;
-            text-align: center;
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.875;
-            /* 30px; */
-            /* 187.5% */
-            letter-spacing: 0.96px;
-        /* flex-shrink: 0; */
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.875;    /* 187.5% */
+    letter-spacing: 0.96px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);   
         border-radius: 4px;
         border: none;
         background-color: var(--blue-color);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         transition-property: background-color border-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* outline: none; */
 }
 .form__submit:hover, .form__submit:focus {
-        background: #188CE8;
-        border-color: #188CE8;
+    background: #188CE8;
+    border-color: #188CE8;
     background-color: #188ce8;
-        cursor: pointer;
+    cursor: pointer;
 }
 
 /* sections first page*/
@@ -516,7 +504,7 @@ border-color: #188CE8;
     margin-top: 0;
 }
 .features li {
-        min-width: 270px;
+    min-width: 270px;
 }
 /* features icons */
 .pad {
