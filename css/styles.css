@@ -487,10 +487,13 @@ letter-spacing: 0.42px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.features.section {
+.features {
     padding-bottom: 0;
 }
-.features .title {
+.features__items {
+    gap: 30px;
+}
+.features__title {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.42px;
@@ -498,16 +501,16 @@ letter-spacing: 0.42px;
     color: var(--main-text-color);
     margin-bottom: 10px;
 }
-.features p {
+.features__text {
     line-height: 1.71429;
     letter-spacing: 0.42px;
     margin-top: 0;
 }
-.features li {
+.features__item {
     min-width: 270px;
 }
 /* features icons */
-.pad {
+.features__pad {
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -519,19 +522,22 @@ letter-spacing: 0.42px;
     margin-bottom: 30px;
     /* display: block; */
 }
-.pad .icon {
+.features__icon {
     width: 70px;
     height: 70px;
 }
 
 /* common for section */
+/* .section ul {display: flex;
+gap: 30px;} */
 .section ul {
 display: flex;
+/* gap: 30px; */
 /* outline: 1px solid red; */
 }
-.w-margin > li + li {
+/* .w-margin > li:not(:first-of-type) {
 margin-left: 30px;
-}
+} */
 .sect-title {
         font-size: 36px;
         font-weight: 700;
@@ -543,10 +549,13 @@ margin-left: 30px;
 .section img {display: block;}
 
 /* we-do section            ---------------------------------------------    */
-.we-do-thumb {
+.we-do__items {
+    gap: 30px;
+}
+.we-do__thumb {
 position: relative;
 }
-.laibel {
+.we-do__label {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -557,7 +566,7 @@ position: relative;
         /* flex-shrink: 0; */
     background: rgba(47, 48, 58, 0.80);
 }
-.laibel p {
+.we-do__text {
     color: #FFF;
         /* text-align: center; */
         /* font-family: Roboto; */
@@ -573,15 +582,18 @@ position: relative;
 .team {
     background: var(--btn-bg-color);
 }
-.team-list > li {
+.team__item {
         text-align: center;
         border-radius: 0px 0px 4px 4px;
         background: #FFF;
             /* material shadow v1 */
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+.team__item:not(:first-of-type) {
+            margin-left: 30px;
+}
 
-.team-list div {
+.team__list div {
     padding: 30px 32px;
 }
 .team p {
@@ -604,6 +616,7 @@ position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* gap: 10px; */
 }
 .social__btn {
     display: flex;
