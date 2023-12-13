@@ -92,7 +92,7 @@ h1, h2, h3, p {margin: 0;}
             /* flex-shrink: 0; */
             border-radius: 2px;
             background: var(--blue-color);
- }
+        }
 .site-nav__link:hover,
 .site-nav__link:focus,
 .site-nav__link::selection {
@@ -115,7 +115,7 @@ opacity: 1;
     display: flex;
         align-items:center;
         justify-content: center;
-}
+}   
 .header-contacts__link {
     display: flex;
     align-items: center;
@@ -138,7 +138,7 @@ opacity: 1;
     /* fill: var(--blue-color); */
 }
 .icon.envelope {
-    width: 16px;
+        width: 16px;
     height: 12px;
     margin-right: 10px;
     /* flex-shrink: 0; */
