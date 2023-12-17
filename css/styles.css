@@ -610,14 +610,14 @@ position: relative;
 .team__list div {
     padding: 30px 32px;
 }
-.team p {
+.team__prof {
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.48px;
     color: var(--gray-color);
     margin-bottom: 16px;
 }
-.team h3 {
+.team__name {
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 0.48px;
