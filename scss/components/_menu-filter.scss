@@ -6,16 +6,12 @@
     margin-bottom: 50px;
 }
 
-.menu-filter li {
+.menu-filter__item {
     display: inline-block;
-    /* align-items:  center; */
-    /* outline: 1px solid red; */
+    &:not(:first-of-type) {
+    margin-left: 8px; }
 }
 
-.menu-filter li+li {
-    margin-left: 8px;
-    /* margin-right: auto; */
-}
 
 .btn.filter {
     border-radius: 4px;
@@ -30,11 +26,11 @@
     transition-property: color, bacground, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn.filter:hover,
-.btn.filter:focus {
+    &:hover,
+    &:focus {
     color: var(--white-color);
     background-color: var(--blue-color);
     box-shadow: 0px 4px 4px 0px var(--btn-shadow);
+        }
 }
+

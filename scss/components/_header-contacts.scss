@@ -16,25 +16,22 @@
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--blue-color);
+    /* fill: var(--blue-color); */
+        }
 }
 
-/* .header-contacts__item {
-} */
 .header-contacts__item:not(last-child) {
     margin-left: 50px;
 }
 
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-    color: var(--blue-color);
-    /* fill: var(--blue-color); */
-}
 
 .icon.envelope {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    /* flex-shrink: 0; */
     fill: currentColor;
 }
 
@@ -42,13 +39,5 @@
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    /* flex-shrink: 0; */
     fill: currentColor;
-}
-
-header li:hover,
-header li:focus {
-    /* fill: var(--blue-color);
-    color: var(--blue-color); */
-    cursor: pointer;
 }
