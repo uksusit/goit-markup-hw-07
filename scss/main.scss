@@ -2,6 +2,7 @@
 @import './utils/vars';
 @import './utils/visually-hidden';
 @import './utils/is-hidden';
+@import './utils/relative';
 // @import './utils/norm';
 
 // base
@@ -22,6 +23,7 @@
 @import './components/backdrop';
 @import './components/modal';
 @import './components/form';
+@import './components/social';
 
 @import './components/menu-filter';
 @import './components/project';
@@ -29,7 +31,7 @@
 @import './components/footer';
 @import './components/footer-address';
 @import './components/footer-givup';
-@import './components/footer-social';
+@import './components/footer-subscrb';
 
 
 
@@ -41,3 +43,5 @@
 @import './layouts/clients';
 
 @import './layouts/project-list';
+
+@import './components/footer-social';

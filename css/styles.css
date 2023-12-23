@@ -911,7 +911,7 @@ margin-bottom: 20px;
 }
 
 /* icons */
-.footer .social-btn {
+.footer .social__btn {
     background-color: rgba(255, 255, 255, 0.10);
     fill: var(--white-color);
         /* flex-shrink: 0; */
