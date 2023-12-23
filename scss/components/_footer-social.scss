@@ -1,0 +1,14 @@
+/* icons */
+.footer .social-btn {
+    background-color: rgba(255, 255, 255, 0.10);
+    fill: var(--white-color);
+    /* flex-shrink: 0; */
+}
+
+/* .social-footer .social-btn:hover,
+.social-footer .social-btn:focus {
+    background-color: var(--blue-color);
+} */
+.social li+li {
+    margin-left: 10px;
+}

@@ -775,6 +775,8 @@ display: flex;
         margin-left: 30px; */
         /* outline: 1px solid red; */
 }
+
+
 .project {
     display: block;
             /* box-shadow: none; */
@@ -888,11 +890,12 @@ address {
     /* background-color: var(--white-color); */
 }
 
-/* приєднуйтесь */
 footer .container {
     display: flex;
     align-items: baseline;
 }
+/* приєднуйтесь */
+
 .givup {
     margin-left: 70px;
     width: 206px;

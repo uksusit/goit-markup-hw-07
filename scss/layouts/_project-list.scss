@@ -1,0 +1,22 @@
+/* project-list */
+
+.pjcts img {
+    display: block;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    /* margin-left: -30px;
+    margin-bottom: -30px; */
+    /* outline: 1px solid red; */
+}
+
+.projects li {
+    background: #FFF;
+    /* margin-bottom: 30px;
+        margin-left: 30px; */
+    /* outline: 1px solid red; */
+}
