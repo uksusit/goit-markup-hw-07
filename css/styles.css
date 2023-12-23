@@ -290,6 +290,8 @@ transition-timing-function: cubic-bezier(0.40, 0.6, 0.12, 1);
     cursor: pointer;
     /* border-color: var(--blue-color) ; */
 }
+
+
 .form__text {
     color: #212121;
         text-align: center;
@@ -373,6 +375,7 @@ cursor: pointer;
 }
  
 
+/* ------------checkbox ---------- */
 .checkbox {
     /* margin-top: 20px; */
     margin-left: 12px;
@@ -381,7 +384,6 @@ cursor: pointer;
     align-items: center;
 }
 
-/* ------------checkbox ---------- */
 .checkbox__label {
     margin-top: 17px;
     display: flex;
@@ -499,6 +501,8 @@ letter-spacing: 0.42px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+
 .features {
     padding-bottom: 0;
 }
@@ -709,8 +713,9 @@ display: flex;
 
 
 /* -----------------------------portfolio-------------------------------------- */
-/* menu filter portfolio   ----------------------------------------------     */
 
+
+/* menu filter portfolio   ----------------------------------------------     */
 
 .menu-filter {
     display: flex;
