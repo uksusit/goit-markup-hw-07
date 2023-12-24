@@ -23,17 +23,11 @@
 @import './components/backdrop';
 @import './components/modal';
 @import './components/form';
+
 @import './components/social';
 
 @import './components/menu-filter';
 @import './components/project';
-
-@import './components/footer';
-@import './components/footer-address';
-@import './components/footer-goin';
-@import './components/footer-social';
-@import './components/footer-subscrb';
-
 
 
 // layouts
@@ -44,3 +38,5 @@
 @import './layouts/clients';
 
 @import './layouts/project-list';
+
+@import './layouts/footer';
