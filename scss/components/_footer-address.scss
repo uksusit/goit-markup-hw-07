@@ -1,19 +1,20 @@
 /* footer address */
-.ftr-adr {
-    /* outline: 1px solid red; */
-    box-sizing: content-box;
-}
 
-address {
+.address {
     margin-top: 20px;
     width: 231px;
     ;
 }
 
+.ftr-adr {
+    /* outline: 1px solid red; */
+    box-sizing: content-box;
+}
+
 /* .ftr-adr  li {      
      outline: 1px solid red;
 } */
-.ftr-adr li+li {
+.ftr-adr__item:not(:first-of-type) {
     margin-top: 9px;
 }
 
@@ -25,7 +26,12 @@ address {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* background-color: var(--footer-bg-color); */
-
+    
+    &:focus,
+    &:hover {
+        color: var(--blue-color);
+        /* background-color: var(--white-color); */
+    }
 }
 
 .footer-cont {
@@ -35,12 +41,10 @@ address {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-cont:focus,
-.footer-cont:hover,
-.addr-gmap:focus,
-.addr-gmap:hover {
+    &:focus,
+    &:hover {
     color: var(--blue-color);
     /* background-color: var(--white-color); */
+        }
 }

@@ -796,21 +796,21 @@ footer .container {
 }
 
 /* footer address */
+.address {
+  margin-top: 20px;
+  width: 231px;
+}
+
 .ftr-adr {
   /* outline: 1px solid red; */
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
 
-address {
-  margin-top: 20px;
-  width: 231px;
-}
-
 /* .ftr-adr  li {      
      outline: 1px solid red;
 } */
-.ftr-adr li + li {
+.ftr-adr__item:not(:first-of-type) {
   margin-top: 9px;
 }
 
@@ -826,6 +826,10 @@ address {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* background-color: var(--footer-bg-color); */
 }
+.addr-gmap:focus, .addr-gmap:hover {
+  color: var(--blue-color);
+  /* background-color: var(--white-color); */
+}
 
 .footer-cont {
   line-height: 1.71429;
@@ -838,23 +842,19 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-cont:focus,
-.footer-cont:hover,
-.addr-gmap:focus,
-.addr-gmap:hover {
+.footer-cont:focus, .footer-cont:hover {
   color: var(--blue-color);
   /* background-color: var(--white-color); */
 }
 
 /* приєднуйтесь */
-.givup {
+.goin {
   margin-left: 70px;
   width: 206px;
   /* padding: 12px 0; */
 }
 
-.givup p {
+.goin__text {
   text-transform: uppercase;
   /* font-weight: 500; */
   font-weight: 700;
