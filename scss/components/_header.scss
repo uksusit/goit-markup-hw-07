@@ -1,12 +1,15 @@
 /* ---------------- header --------------------- */
+
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    
+}
+
 .header--container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header {
-    border-bottom: 1px solid #ECECEC;
 }
 
 // header li:hover,
