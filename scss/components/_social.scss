@@ -18,20 +18,20 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover,
+    &:focus {
+    fill: var(--white-color);
+    background-color: var(--blue-color);
+    cursor: pointer;
+            }
     /* background-color: var(--white-color);
     border-color: var(--white-color); */
 }
-
-/* ----------  social  ------------- */
 
 .social__icon {
     width: 20px;
     height: 20px;
 }
-
-.social .social__btn:hover,
-.social .social__btn:focus {
-    fill: var(--white-color);
-    background-color: var(--blue-color);
-    cursor: pointer;
+.social li+li {
+    margin-left: 10px;
 }
