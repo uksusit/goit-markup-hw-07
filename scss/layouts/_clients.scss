@@ -28,6 +28,14 @@ display: flex;
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--blue-color);
+            border-color: var(--blue-color);
+            /* fill: var(--blue-color); */
+            cursor: pointer;
+        }
 }
 
 .client__icon {
@@ -36,10 +44,10 @@ display: flex;
     fill: currentColor;
 }
 
-.client:hover,
-.client:focus {
-    color: var(--blue-color);
-    border-color: var(--blue-color);
-    /* fill: var(--blue-color); */
-    cursor: pointer;
-}
+// .client:hover,
+// .client:focus {
+//     color: var(--blue-color);
+//     border-color: var(--blue-color);
+//     /* fill: var(--blue-color); */
+//     cursor: pointer;
+// }

@@ -26,6 +26,13 @@
     transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            fill: var(--blue-color);
+            cursor: pointer;
+            /* border-color: var(--blue-color) ; */
+        }
 }
 
 .modal__close-icon {
@@ -38,9 +45,9 @@
     /* flex-shrink: 0; */
 }
 
-.modal__close:hover,
-.modal__close:focus {
-    fill: var(--blue-color);
-    cursor: pointer;
-    /* border-color: var(--blue-color) ; */
-}
+// .modal__close:hover,
+// .modal__close:focus {
+//     fill: var(--blue-color);
+//     cursor: pointer;
+//     /* border-color: var(--blue-color) ; */
+// }

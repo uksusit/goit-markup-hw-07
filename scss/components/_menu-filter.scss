@@ -8,6 +8,7 @@
 
 .menu-filter__item {
     display: inline-block;
+    
     &:not(:first-of-type) {
     margin-left: 8px; }
 }
@@ -26,6 +27,7 @@
     transition-property: color, bacground, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
     color: var(--white-color);
